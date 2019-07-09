@@ -1,0 +1,120 @@
+---
+title: "Squares"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(leaflet)
+library(magrittr)
+```
+
+
+Nat. Geo {data-navmenu="Map Types"}
+=======================================================================
+
+Column {data-width=300}
+-----------------------------------------------------------------------
+Put some pretty good stuff in the ol' side bar. Don't disappoint your readers.
+
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Map one
+
+```{r map_one_ng}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Esri.NatGeoWorldMap",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-78.5, 31.5, zoom = 5) 
+```
+
+### Map two
+
+```{r map_two_ng}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Esri.NatGeoWorldMap",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-65, 31.5, zoom = 5) 
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+### Map three
+
+```{r map_three_ng}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Esri.NatGeoWorldMap",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-78.5, 22, zoom = 5) 
+```
+
+### Map four
+
+```{r map_four_ng}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Esri.NatGeoWorldMap",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-65, 22, zoom = 5) 
+```
+
+Stamen Toner {data-navmenu="Map Types"}
+=======================================================================
+
+Column {data-width=300}
+-----------------------------------------------------------------------
+This is a different sidebar.
+
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Map one
+
+```{r map_one_st}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Stamen.Toner",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-78.5, 31.5, zoom = 5) 
+```
+
+### Map two
+
+```{r map_two_st}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Stamen.Toner",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-65, 31.5, zoom = 5) 
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+### Map three
+
+```{r map_three_st}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Stamen.Toner",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-78.5, 22, zoom = 5) 
+```
+
+### Map four
+
+```{r map_four_st}
+leaflet() %>%
+  addProviderTiles(
+      provider = "Stamen.Toner",
+      options = providerTileOptions(opacity = 0.6)) %>%
+  setView(-65, 22, zoom = 5) 
+```
