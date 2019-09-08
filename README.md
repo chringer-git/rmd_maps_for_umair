@@ -1,4 +1,3 @@
 # rmd_maps_for_umair
-.Rmd example for Umair on Twitter
-
-Example of using Pages, drop downs and maps for a question on Twitter.
+.Rmd example solution for Umair on Twitter.
+This example of uses flexdashboard Pages and drop downs, and shows how to place leaflet objects (OpenStreet Maps) in rows and columns within the pages.
